@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		8B5D49902189CBFA008E458C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5D498F2189CBFA008E458C /* AppDelegate.swift */; };
-		8B5D49922189CBFA008E458C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5D49912189CBFA008E458C /* ViewController.swift */; };
-		8B5D49952189CBFA008E458C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B5D49932189CBFA008E458C /* Main.storyboard */; };
+		8B5D49922189CBFA008E458C /* GenericTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5D49912189CBFA008E458C /* GenericTableViewController.swift */; };
 		8B5D49972189CBFC008E458C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B5D49962189CBFC008E458C /* Assets.xcassets */; };
-		8B5D499A2189CBFC008E458C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B5D49982189CBFC008E458C /* LaunchScreen.storyboard */; };
+		8B5D49A2218A9B5D008E458C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5D49A1218A9B5D008E458C /* Model.swift */; };
+		8B5D49A4218A9B7B008E458C /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5D49A3218A9B7B008E458C /* Cell.swift */; };
+		8B5D49A6218A9D57008E458C /* LauncScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B5D49A5218A9D57008E458C /* LauncScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8B5D498C2189CBFA008E458C /* GenericTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B5D498F2189CBFA008E458C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B5D49912189CBFA008E458C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8B5D49942189CBFA008E458C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B5D49912189CBFA008E458C /* GenericTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewController.swift; sourceTree = "<group>"; };
 		8B5D49962189CBFC008E458C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8B5D49992189CBFC008E458C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B5D499B2189CBFC008E458C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B5D49A1218A9B5D008E458C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8B5D49A3218A9B7B008E458C /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		8B5D49A5218A9D57008E458C /* LauncScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LauncScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				8B5D498F2189CBFA008E458C /* AppDelegate.swift */,
-				8B5D49912189CBFA008E458C /* ViewController.swift */,
-				8B5D49932189CBFA008E458C /* Main.storyboard */,
+				8B5D49912189CBFA008E458C /* GenericTableViewController.swift */,
+				8B5D49A1218A9B5D008E458C /* Model.swift */,
+				8B5D49A3218A9B7B008E458C /* Cell.swift */,
 				8B5D49962189CBFC008E458C /* Assets.xcassets */,
-				8B5D49982189CBFC008E458C /* LaunchScreen.storyboard */,
 				8B5D499B2189CBFC008E458C /* Info.plist */,
+				8B5D49A5218A9D57008E458C /* LauncScreen.storyboard */,
 			);
 			path = GenericTableView;
 			sourceTree = "<group>";
@@ -122,9 +125,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B5D499A2189CBFC008E458C /* LaunchScreen.storyboard in Resources */,
+				8B5D49A6218A9D57008E458C /* LauncScreen.storyboard in Resources */,
 				8B5D49972189CBFC008E458C /* Assets.xcassets in Resources */,
-				8B5D49952189CBFA008E458C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,31 +137,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B5D49922189CBFA008E458C /* ViewController.swift in Sources */,
+				8B5D49A2218A9B5D008E458C /* Model.swift in Sources */,
+				8B5D49A4218A9B7B008E458C /* Cell.swift in Sources */,
+				8B5D49922189CBFA008E458C /* GenericTableViewController.swift in Sources */,
 				8B5D49902189CBFA008E458C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		8B5D49932189CBFA008E458C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8B5D49942189CBFA008E458C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8B5D49982189CBFC008E458C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8B5D49992189CBFC008E458C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8B5D499C2189CBFC008E458C /* Debug */ = {
@@ -292,7 +277,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alfianlosari.GenericTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +295,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alfianlosari.GenericTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
